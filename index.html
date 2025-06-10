@@ -6,24 +6,32 @@
       <h2> Formulário com Método POST </h2>
 
       <form action="/recebe.html" method="post">
-        Nome Completo: <input type="text" maxlenght="50" id="nome" name="nome">
+        <label for="nome"> Nome Completo: </label>
+          <input type="text" maxlenght="50" id="nome" name="nome">
         <br><br>
-        Senha: <input typ="password" id="senha" name="senha">
+        <label for="senha"> Senha: </label>
+          <input typ="password" id="senha" name="senha">
         <br><br>
-        Idade <input typ="number" min="1" max="120" id="idade" name="idade">
+        <label for="idade"> Idade: </label> 
+            <input typ="number" min="1" max="120" id="idade" name="idade">
         <br><br>
-        E-mail: <input typ="email" id="email" name="email">
+        <label for="email"> E-mail: </label>
+          <input typ="email" id="email" name="email"> 
         <br><br>
-        Data de Nascimento: <input typ="date" min="1900-01-01" max="2024-12-31" id="data" name="data">
+        <label for="nascimento"> Data de Nascimento: </label>
+          <input typ="date" min="1900-01-01" max="2024-12-31" id="data" name="data">
         <br><br>
-        Mensagem pessoal: <textarea rows="4" cols="40" name="mensagempessoal" ></textarea>
+        <label for="mensagem"> Mensagem pessoal: </label>
+          <textarea rows="4" cols="40" name="mensagempessoal" ></textarea>
         <br><br>
-        Área de interesse: <select> 
+        <label for="interesse"> Área de interesse: </label>
+          <select> 
             <option value="programacao"> Programação</option>
             <option value="design"> Design</option>
             <option value="redes"> Redes</option> 
             <option value="suporte"> Suporte </option> </select> 
            <input type="submit" value="envio">
+          <!-- comentário -->
       </form>
     </body>
 </html>
